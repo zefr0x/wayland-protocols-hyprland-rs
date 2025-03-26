@@ -1,0 +1,28 @@
+[package]
+name = "wayland-protocols-hyprland"
+version = "0.1.0"
+repository = "https://github.com/zefr0x/wayland-protocols-hyprland"
+authors = ["zefr0x"]
+license = "GPL-3.0-only"
+keywords = ["wayland", "client", "server", "protocol", "extension"]
+description = "Generated API for the Hyprland wayland protocol extensions"
+categories = ["gui", "api-bindings"]
+edition = "2024"
+readme = "README.md"
+
+[dependencies]
+bitflags = "2"
+wayland-backend = "0.3.8"
+wayland-client = { version = "0.31.8", optional = true }
+wayland-protocols = "0.32.6"
+wayland-protocols-wlr = "0.3.6"
+wayland-scanner = "0.31.6"
+wayland-server = { version = "0.31.7", optional = true }
+
+[features]
+client = ["wayland-client", "wayland-protocols/client", "wayland-protocols-wlr/client"]
+server = ["wayland-server", "wayland-protocols/server", "wayland-protocols-wlr/server"]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
