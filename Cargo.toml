@@ -1,6 +1,7 @@
 [package]
 name = "wayland-protocols-hyprland"
 version = "0.1.0"
+documentation = "https://docs.rs/wayland-protocols-hyprland"
 repository = "https://github.com/zefr0x/wayland-protocols-hyprland"
 authors = ["zefr0x"]
 license = "GPL-3.0-only"
