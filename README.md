@@ -1,3 +1,7 @@
+[![crates.io](https://img.shields.io/crates/v/wayland-protocols-hyprland.svg)](https://crates.io/crates/wayland-protocols-hyprland)
+[![docs.rs](https://docs.rs/wayland-protocols-hyprland/badge.svg)](https://docs.rs/wayland-protocols-hyprland)
+[![release](https://github.com/zefr0x/wayland-protocols-hyprland-rs/actions/workflows/publish-release.yml/badge.svg)](https://github.com/zefr0x/wayland-protocols-hyprland-rs/actions/workflows/publish-release.yml)
+
 # wayland-protocols-hyprland
 
 This crate provides Wayland object definitions for the Hyprland Wayland protocol
