@@ -2,6 +2,8 @@
 # and will publish it to the crates.io registery.
 
 name: release
+permissions:
+  "contents": "write"
 on:
   push:
     tags:
