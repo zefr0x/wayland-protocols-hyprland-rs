@@ -12,7 +12,8 @@ edition = "2024"
 readme = "README.md"
 include = [
   "src/",
-  "LICENSE",
+  "COPYING",
+  "COPYING.LESSER",
   "hyprland-protocols/protocols/",
   "hyprland-protocols/LICENSE"
 ]
