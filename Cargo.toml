@@ -9,6 +9,12 @@ description = "Generated API for the Hyprland wayland protocol extensions"
 categories = ["gui", "api-bindings"]
 edition = "2024"
 readme = "README.md"
+include = [
+  "src/",
+  "LICENSE",
+  "hyprland-protocols/protocols/",
+  "hyprland-protocols/LICENSE"
+]
 
 [dependencies]
 bitflags = "2"
