@@ -15,21 +15,29 @@ include = [
   "COPYING",
   "COPYING.LESSER",
   "hyprland-protocols/protocols/",
-  "hyprland-protocols/LICENSE"
+  "hyprland-protocols/LICENSE",
 ]
 
 [dependencies]
 bitflags = "2"
 wayland-backend = "0.3.8"
 wayland-client = { version = "0.31.8", optional = true }
-wayland-protocols = "0.32.6"
+wayland-protocols = { version = "0.32.6", features = ["staging"] }
 wayland-protocols-wlr = "0.3.6"
 wayland-scanner = "0.31.6"
 wayland-server = { version = "0.31.7", optional = true }
 
 [features]
-client = ["wayland-client", "wayland-protocols/client", "wayland-protocols-wlr/client"]
-server = ["wayland-server", "wayland-protocols/server", "wayland-protocols-wlr/server"]
+client = [
+  "wayland-client",
+  "wayland-protocols/client",
+  "wayland-protocols-wlr/client",
+]
+server = [
+  "wayland-server",
+  "wayland-protocols/server",
+  "wayland-protocols-wlr/server",
+]
 
 [package.metadata.docs.rs]
 all-features = true

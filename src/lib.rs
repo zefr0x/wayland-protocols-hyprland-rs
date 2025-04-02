@@ -67,3 +67,12 @@ pub mod toplevel_export {
         );
     }
 }
+
+pub mod toplevel_mapping {
+    pub mod v1 {
+        wayland_protocol!(
+            "./hyprland-protocols/protocols/hyprland-toplevel-mapping-v1.xml",
+            [wayland_protocols::ext::foreign_toplevel_list::v1, wayland_protocols_wlr::foreign_toplevel::v1]
+        );
+    }
+}
